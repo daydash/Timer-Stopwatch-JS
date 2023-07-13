@@ -99,7 +99,7 @@ const stopwatch = () => {
 };
 
 // Timer
-
+/*
 const startCountdown = () => {
   console.log(document.getElementById("timerInput").getAttribute("color"));
   const targetDate = new Date("2023-12-31T23:59:59").getTime();
@@ -133,3 +133,4 @@ const startTimer = () => {
   setInterval(startCountdown, 1000);
   console.log("yash");
 };
+*/
