@@ -1,12 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Timer/Stopwatch</title>
-		<link rel="stylesheet" href="./styles.css" />
-	</head>
-	<body>
-		<script src="./script.js"></script>
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Timer/Stopwatch</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container-1">
+        <div class="time">
+          <span class="digit" id="hr">00</span>
+          <span class="txt">Hr</span>
+          <span class="digit" id="min">00</span>
+          <span class="txt">Min</span>
+          <span class="digit" id="sec">00</span>
+          <span class="txt">Sec</span>
+          <span class="digit" id="ms">00</span>
+        </div>
+        <div class="stopwatch">
+          <button class="stopwatchStart stopwatchBtn" name="start">
+            Start
+          </button>
+          <button class="stopwatchStop stopwatchBtn" name="stop">Stop</button>
+          <button class="stopwatchReset stopwatchBtn" name="reset">
+            Reset
+          </button>
+        </div>
+      </div>
+
+      <div class="container-2">
+        <div class="time">
+          <span class="digit" id="daysTimer">00</span>
+          <span class="txt">Days</span>
+          <span class="digit" id="hoursTimer">00</span>
+          <span class="txt">Hr</span>
+          <span class="digit" id="minutesTimer">00</span>
+          <span class="txt">Min</span>
+          <span class="digit" id="secondsTimer">00</span>
+          <span class="txt">Sec</span>
+        </div>
+        <div class="timer">
+          <input type="time" class="timerInput"/>
+          <button
+            class="timerStart timerBtn"
+            name="start"
+            onclick="startTimer()"
+          >
+            Start
+          </button>
+          <button class="timerStop timerBtn" name="stop">Stop</button>
+          <button class="timerReset timerBtn" name="reset">Reset</button>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
 </html>
